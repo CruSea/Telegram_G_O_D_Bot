@@ -2,7 +2,7 @@
 import telebot
 from telebot import types
 
-bot = telebot.TeleBot("397614974:AAF2xzEDndjuwRHIo-jfhOmNVJA858tMuUA")
+bot = telebot.TeleBot("208413095:AAGiAHbryA-lcYBD_vQaWZQo4nlRIdPCrkY")
 
 intro_markup = types.ReplyKeyboardMarkup(row_width=1)
 itembtn1 = types.KeyboardButton(u'ስለ ክርስቶስ ከዚህ በፊት አልሰማሁም')

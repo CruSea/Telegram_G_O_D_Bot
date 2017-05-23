@@ -7,7 +7,8 @@ bot = telebot.TeleBot("208413095:AAFflQth4lhFdXUQkJaHjemOfIqFRZT2_DU")
 menu1 = types.ReplyKeyboardMarkup(row_width=1)
 itembtn1 = types.KeyboardButton(u'ማወቅ ፈልጋለሁ')
 itembtn2 = types.KeyboardButton(u'የእግዚአብሔርን ፍቅር  በግል እየተለማመድኩ ነው')
-menu1.add(itembtn1, itembtn2)
+itembtn3 = types.KeyboardButton(u'አጭር ፊልም ይመልከቱ')
+menu1.add(itembtn1, itembtn2, itembtn3)
 
 menu2 = types.ReplyKeyboardMarkup(row_width=1)
 itembtn1 = types.KeyboardButton(u'የመጀመርያው ሕግ')
@@ -49,7 +50,7 @@ text_messages = {'welcome':u'እንካን ወደ አጋፔ መጡ!\n\nየእግ�
                            u'ከእግዚአብሔር ጋር የሚኖረውን ግንኙነት የሚወስኑ አራት መንፈሳዊ ሕጎች አሉ፡፡ መርሆች ብለህም ልትወስዳቸው ትችላለህ፡፡ '
                            u'\nይህን ማወቅ ትፈልጋለህ ?',
                  'step0':u'እነዲሁም ሰው ከእግዚአብሔር ጋር የሚኖረውን ግንኙነት የሚወስኑ አራት መንፈሳዊ ሕጎች አሉ፡፡ መርሆች ብለህም ልትወስዳቸው ትችላለህ፡፡'
-                         u'እነኚህም ህጎች አራት ናቸው የመጀመሪያውን እንመልከ',
+                         u'እነኚህም ህጎች አራት ናቸው የመጀመሪያውን እንመልከት',
                  'step1':u'የመጀመርያው ሕግ '
                          u'\n\nእግዚአብሔር ይወድሃል ስለዚህም ለሕይወትህ አስደናቂ ዕቅድ አዘጋጅቶልሃል፡፡'
                          u'የእግዚአብሔር ፍቅር “በእርሱ የሚያምን ሁሉ የዘላለም ሕይወት እንዲኖረው እንጂ እንዳይጠፋ እግዚአብሔር አንድያ ልጁን '
@@ -130,6 +131,8 @@ def replay_send(message):
         bot.send_photo(message.chat.id, photo)
         bot.send_message(message.chat.id, text_messages['step42'], reply_markup=menu6)
         bot.send_message(message.chat.id, text_messages['step5'], reply_markup=menu6)
+    elif (message.text == "አጭር ፊልም ይመልከቱ"):
+        bot.send_message(message.chat.id, "https://www.youtube.com/watch?v=KGlx11BxF24", reply_markup=intro_markup)
     elif (message.text == "song2"):
         bot.send_message(message.chat.id, "https://www.youtube.com/watch?v=BZrGJXBB3jc", reply_markup=intro_markup)
     else:

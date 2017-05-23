@@ -5,8 +5,8 @@ from telebot import types
 bot = telebot.TeleBot("208413095:AAFflQth4lhFdXUQkJaHjemOfIqFRZT2_DU")
 
 menu1 = types.ReplyKeyboardMarkup(row_width=1)
-itembtn1 = types.KeyboardButton(u'የእግዚአብሔርን ፍቅር  በግል እየተለማመድኩ ነው')
-itembtn2 = types.KeyboardButton(u'ማወቅ ፈልጋለሁ')
+itembtn1 = types.KeyboardButton(u'ማወቅ ፈልጋለሁ')
+itembtn2 = types.KeyboardButton(u'የእግዚአብሔርን ፍቅር  በግል እየተለማመድኩ ነው')
 menu1.add(itembtn1, itembtn2)
 
 menu2 = types.ReplyKeyboardMarkup(row_width=1)
@@ -41,7 +41,7 @@ non_believer_markup1 = types.ReplyKeyboardMarkup(row_width=1)
 itembtn1 = types.KeyboardButton(u'እግዚአብሔርን ፍቅር በግል ማወቅ')
 non_believer_markup1.add(itembtn1, itembtn2, itembtn3)
 
-text_messages = {'welcome':u'እንካን ወደ አጋፔ መጡ!\n\nየእግዚአብሔርን ፍቅር በግል ማወቅ(AGAPE BOT) '
+text_messages = {'welcome':u'እንካን ወደ አጋፔ መጡ!\n\nየእግዚአብሔርን ፍቅር በግል ማወቅ! '
                            u'\n\nየእግዚአብሔርን ፍቅር በግል ለማወቅ ምን ያስፈልግሀል? የመብረቅ ብልጭታ? ጥብቅ ኃይማኖታዊ ስርዓት? የተሻልክ '
                            u'ሰው ሆኖ መገኘት? አንዳቸውም እነደ ቅደመ ሆኔታ አያስፈልጉህም፡፡ እግዚአብሔር እርሱን ለማወቅ የሚያስፈልገንን '
                            u'መፅሐፍ ቅዱስ ላይ በግልፅ አስቀምጦልናል፡፡ ማንኛውም ነገር ደንብና ስርዓት አለው፡፡ ሰው የሠራቸው ነገሮች ሰው '

@@ -131,7 +131,7 @@ def replay_send(message):
         bot.send_photo(message.chat.id, photo)
         bot.send_message(message.chat.id, text_messages['step42'], reply_markup=menu6)
         bot.send_message(message.chat.id, text_messages['step5'], reply_markup=menu6)
-    elif (message.text == "አጭር ፊልም ይመልከቱ"):
+    elif (message.text == u"አጭር ፊልም ይመልከቱ"):
         bot.send_message(message.chat.id, "https://www.youtube.com/watch?v=KGlx11BxF24", reply_markup=intro_markup)
     elif (message.text == "song2"):
         bot.send_message(message.chat.id, "https://www.youtube.com/watch?v=BZrGJXBB3jc", reply_markup=intro_markup)

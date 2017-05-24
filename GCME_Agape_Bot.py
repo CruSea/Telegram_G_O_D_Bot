@@ -4,7 +4,7 @@ from telebot import types
 
 bot = telebot.TeleBot("208413095:AAFflQth4lhFdXUQkJaHjemOfIqFRZT2_DU")
 
-menu1 = types.ReplyKeyboardMarkup(row_width=1)
+menu1 = types.ReplyKeyboardMarkup(row_width=2)
 itembtn1 = types.KeyboardButton(u'ማወቅ ፈልጋለሁ')
 itembtn2 = types.KeyboardButton(u'የእግዚአብሔርን ፍቅር  በግል እየተለማመድኩ ነው')
 itembtn3 = types.KeyboardButton(u'አጭር ፊልም ይመልከቱ')
@@ -22,7 +22,7 @@ menu3.add(itembtn1, itembtn2)
 
 menu4 = types.ReplyKeyboardMarkup(row_width=1)
 itembtn1 = types.KeyboardButton(u'ሦስተኛው ሕግ')
-itembtn2 = types.KeyboardButton(u'start')
+itembtn2 = types.KeyboardButton(u'/start')
 menu4.add(itembtn1, itembtn2)
 
 menu5 = types.ReplyKeyboardMarkup(row_width=1)

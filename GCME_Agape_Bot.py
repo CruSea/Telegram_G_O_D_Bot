@@ -12,7 +12,7 @@ menu1.add(itembtn1, itembtn2, itembtn3)
 
 menu2 = types.ReplyKeyboardMarkup(row_width=1)
 itembtn1 = types.KeyboardButton(u'የመጀመርያው ሕግ')
-itembtn1 = types.KeyboardButton(u'start')
+itembtn2 = types.KeyboardButton(u'start')
 menu2.add(itembtn1)
 
 menu3 = types.ReplyKeyboardMarkup(row_width=1)

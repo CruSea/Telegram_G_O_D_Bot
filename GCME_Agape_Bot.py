@@ -135,7 +135,7 @@ def send_welcome(message):
 def echo_all(message):
     replay_send(message)
 
-def replay send(message):
+def replay_send(message):
     if(message.text == 'help'):
         bot.send_message(message.chat.id, text_messages['welcome'], reply_markup=menu1)
     elif(message.text == u"ስለ ክርስቶስ ከዚህ በፊት አልሰማሁም"):
@@ -144,8 +144,8 @@ def replay send(message):
         bot.send_message(message.chat.id, text_messages['step60'], reply_markup=menu7)
     elif (message.text == u"ኢየሱስ ለምን ሞተ"):
         bot.send_message(message.chat.id, text_messages['step6'], reply_markup=menu7)
-    elif(message.text == u"ማወቅ ፈልጋለሁ"):        bot.send_message(message.chat.id, text_messages['step0'], reply_markup=menu2)
-
+    elif(message.text == u"ማወቅ ፈልጋለሁ"):
+        bot.send_message(message.chat.id, text_messages['step0'], reply_markup=menu2)
     elif (message.text == u"የመጀመርያው ሕግ"):
         bot.send_message(message.chat.id, text_messages['step1'], reply_markup=menu3)
     elif (message.text == u"ሁለተኛው ሕግ"):

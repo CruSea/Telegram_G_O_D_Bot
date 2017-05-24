@@ -122,7 +122,7 @@ u'ይህን ሙሉ ፅሁፍ ለማግኘት ይህን ሊንክ ይመልከቱ
                  'stepa4':u'',
                  'stepa5':u'',
                  'stepa6':u'',
-                 'stepa7':u'',
+                 'stepa':u'',
 
 
                  }
@@ -141,9 +141,9 @@ def replay_send(message):
     elif(message.text == u"ስለ ክርስቶስ ከዚህ በፊት አልሰማሁም"):
         bot.send_message(message.chat.id, text_messages['step0'], reply_markup=non_believer_markup1)
     elif (message.text == u"ስለ ክርስቶስ ተጨማሪ መረጃዎች"):
-        bot.send_message(message.chat.id, text_messages['step60'], reply_markup=menu7)
+        bot.send_message(message.chat.id, text_messages['stept'], reply_markup=menu7)
     elif (message.text == u"ኢየሱስ ለምን ሞተ"):
-        bot.send_message(message.chat.id, text_messages['step6'], reply_markup=menu7)
+        bot.send_message(message.chat.id, text_messages['stepa1'], reply_markup=menu7)
     elif(message.text == u"ማወቅ ፈልጋለሁ"):
         bot.send_message(message.chat.id, text_messages['step0'], reply_markup=menu2)
     elif (message.text == u"የመጀመርያው ሕግ"):

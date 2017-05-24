@@ -12,12 +12,12 @@ menu1.add(itembtn1, itembtn2, itembtn3)
 
 menu2 = types.ReplyKeyboardMarkup(row_width=1)
 itembtn1 = types.KeyboardButton(u'የመጀመርያው ሕግ')
-itembtn2 = types.KeyboardButton(u'start')
+itembtn2 = types.KeyboardButton(u'/start')
 menu2.add(itembtn1, itembtn2)
 
 menu3 = types.ReplyKeyboardMarkup(row_width=1)
 itembtn1 = types.KeyboardButton(u'ሁለተኛው ሕግ')
-itembtn2 = types.KeyboardButton(u'start')
+itembtn2 = types.KeyboardButton(u'/start')
 menu3.add(itembtn1, itembtn2)
 
 menu4 = types.ReplyKeyboardMarkup(row_width=1)
@@ -27,7 +27,7 @@ menu4.add(itembtn1, itembtn2)
 
 menu5 = types.ReplyKeyboardMarkup(row_width=1)
 itembtn1 = types.KeyboardButton(u'አራተኛው ሕግ')
-itembtn2 = types.KeyboardButton(u'start')
+itembtn2 = types.KeyboardButton(u'/start')
 menu5.add(itembtn1, itembtn2)
 
 menu6 = types.ReplyKeyboardMarkup(row_width=1)
@@ -40,7 +40,7 @@ intro_markup = types.ReplyKeyboardMarkup(row_width=1)
 itembtn1 = types.KeyboardButton(u'ስለ ክርስቶስ ከዚህ በፊት አልሰማሁም')
 itembtn2 = types.KeyboardButton(u'ስለ ክርስቶስ ከዚህ በፊት ሰምቻለሁ')
 itembtn3 = types.KeyboardButton(u'ስለ ክርስቶስ ተጨማሪ መረጃዎች')
-itembtn4 = types.KeyboardButton(u'start')
+itembtn4 = types.KeyboardButton(u'/start')
 intro_markup.add(itembtn1, itembtn2, itembtn3, itembtn4)
 
 non_believer_markup1 = types.ReplyKeyboardMarkup(row_width=1)

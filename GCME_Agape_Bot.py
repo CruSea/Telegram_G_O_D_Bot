@@ -12,6 +12,7 @@ menu1.add(itembtn1, itembtn2, itembtn3)
 
 menu2 = types.ReplyKeyboardMarkup(row_width=1)
 itembtn1 = types.KeyboardButton(u'የመጀመርያው ሕግ')
+itembtn1 = types.KeyboardButton(u'start')
 menu2.add(itembtn1)
 
 menu3 = types.ReplyKeyboardMarkup(row_width=1)
@@ -135,7 +136,7 @@ def replay_send(message):
         bot.send_audio(message.chat.id,audio)
         bot.send_audio(message.chat.id, "FILEID")
     elif (message.text == u"አጭር ፊልም ይመልከቱ"):
-        bot.send_message(message.chat.id, "https://www.youtube.com/watch?v=KGlx11BxF24", reply_markup=intro_markup)
+        bot.send_message(message.chat.id, "https://www.youtube.com/watch?v=KGlx11BxF24", reply_markup=menu1)
     elif (message.text == "song2"):
         bot.send_message(message.chat.id, "https://www.youtube.com/watch?v=BZrGJXBB3jc", reply_markup=intro_markup)
     else:

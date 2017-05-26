@@ -206,7 +206,7 @@ def replay_send(message):
         bot.send_photo(message.chat.id, photo)
         bot.send_message(message.chat.id, text_messages['step42'], reply_markup=menu6)
         bot.send_message(message.chat.id, text_messages['step5'], reply_markup=menu6)
-        audio = open('audios/salivation.mp3','rb')
+        audio = open('audios/salivationprayer.mp3','rb')
         bot.send_audio(message.chat.id,audio)
         bot.send_audio(message.chat.id, "FILEID")
     elif (message.text == u"አጭር ፊልም ይመልከቱ"):

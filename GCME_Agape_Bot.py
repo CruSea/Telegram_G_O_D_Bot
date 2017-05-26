@@ -40,7 +40,7 @@ itembtn4 = types.KeyboardButton(u'/start')
 menu6.add(itembtn1,itembtn2,itembtn3, itembtn4)
 
 
-menu7 = types.ReplyKeyboardMarkup(row_width=1)
+menu7 = types.ReplyKeyboardMarkup(row_width=2)
 itembtn1 = types.KeyboardButton(u'ኢየሱስ ለምን ሞተ?')
 itembtn2 = types.KeyboardButton(u'እግዚአብሔር ፀሎት ይመልሳልን?')
 itembtn3 = types.KeyboardButton(u'መንግሥተ ሰማይ ምን ትመስላለች ?')

@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 import telebot
+
 from telebot import types
 
 bot = telebot.TeleBot("208413095:AAFflQth4lhFdXUQkJaHjemOfIqFRZT2_DU")
@@ -170,19 +171,14 @@ def replay_send(message):
         bot.send_message(message.chat.id, text_messages['stept'], reply_markup=menu7)
     elif (message.text == u"ኢየሱስ ለምን ሞተ?"):
         bot.send_message(message.chat.id, text_messages['stepa1'], reply_markup=menu7)
-        bot.send_message(message.chat.id, "http://habeshastudent.com/a/whydid.html")
     elif (message.text == u"እግዚአብሔር ፀሎት ይመልሳልን?"):
         bot.send_message(message.chat.id, text_messages['stepa2'], reply_markup=menu7)
-        bot.send_message(message.chat.id, "http://habeshastudent.com/a/prayers.html")
     elif (message.text == u"መንግሥተ ሰማይ ምን ትመስላለች ?"):
         bot.send_message(message.chat.id, text_messages['stepa3'], reply_markup=menu7)
-        bot.send_message(message.chat.id, "http://habeshastudent.com/a/heaven.html")
     elif (message.text == u"የፍቅር ግንኙነት"):
         bot.send_message(message.chat.id, text_messages['stepa4'], reply_markup=menu7)
-        bot.send_message(message.chat.id, "http://habeshastudent.com/a/wolves.html")
     elif (message.text == u"የሕይወቴ ዓላማ ምንድነው?"):
         bot.send_message(message.chat.id, text_messages['stepa5'], reply_markup=menu7)
-        bot.send_message(message.chat.id, "http://habeshastudent.com/a/purpose.html")
     elif(message.text == u"ማወቅ ፈልጋለሁ"):
         bot.send_message(message.chat.id, text_messages['step0'], reply_markup=menu2)
     elif (message.text == u"የመጀመርያው ሕግ"):
